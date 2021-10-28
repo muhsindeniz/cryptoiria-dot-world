@@ -1,0 +1,64 @@
+@media only screen and (max-width: 768px){
+
+    section{
+        padding: 20px 0 !important;
+    }
+
+    h1{
+        font-size: 36px !important;
+    }
+
+    h2{
+        font-size: 24px !important;
+    }
+
+    p{
+        font-size: 14px !important;
+    }
+
+    .header-dot-world{
+        background-image: url(../img/banner/dot-world-mobile-banner.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position:bottom !important;
+        height: 450px !important;
+    }
+
+    .navbar-dark {
+        background-color: #000 !important;
+    }
+
+    .d-lg-none-sm-block{
+        display: block !important;
+    }
+
+    .button-primary{
+        width: 114px !important;
+        height: 41px !important;
+        font-size: 12px;
+    }
+
+    .dot-world-header-button{
+        margin-top: 20px !important;
+    }
+
+    .order-sm-1{
+        order: 1 !important;
+    }
+
+    .order-sm-2{
+        order: 2 !important;
+    }
+
+    .dow-world-cryptoiriaLogo-defi img{
+        margin-top: 0 !important;
+    }
+
+    .dow-world-cryptoiriaLogo-win-play img{
+        width: 60px;
+    }
+
+    .mobile-center-banner img{
+        width: 280px;
+    }
+}
