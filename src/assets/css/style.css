@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: hkGroteskRegular;
-    background-color: var(--dot-world-bg);
+    /* background-color: var(--dot-world-bg); */
 }
 
 h1,h2,h3,h4,h5,h6,span,div,small,b,u,i,button,input{
@@ -51,6 +51,12 @@ h4{
     color: var(--text-white);
 }
 
+h5{
+    font-size: 15px;
+    font-family: hkGroteskRegular;
+    color: var(--text-white);
+}
+
 
 p{
     font-size: 16px;
@@ -80,6 +86,7 @@ p{
     background-position: center;
     height: 44px;
     width: 144px;
+    font-size: 14px;
     color: var(--text-gold);
     border-color: transparent;
     display: flex;
@@ -119,14 +126,24 @@ p{
 .navbar-dark .navbar-toggler{
     border-color: transparent !important;
 }
-
-.navbar-dark .navbar-toggler-icon svg path{
-    fill: #fff !important;
+.navbar-dark .navbar-toggler-icon{
+    background-image: url(../img/custom/navbarLines.svg) !important;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
 }
 
 .dot-world-header-button{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.cryptoiria-header-button{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     margin-top: 70px;
 }
@@ -162,4 +179,80 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.computer-space{
+    padding: 0 66px;
+}
+
+/****************************
+    Crptoiria CSS
+****************************/
+
+.header-cryptoiria{
+    width: 100%;
+    background-image: url(../img/banner/cryptoiriaHeaderBg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:top;
+    height: 784px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.d-lg-block{
+    display: block;
+}
+
+.d-lg-none{
+    display: none;
+}
+
+.navbar-cryptoiria-dark .navbar-toggler-icon{
+    background-image: url(../img/custom/navbarLines.svg) !important;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+}
+
+.headerBannerBg img{
+    position:absolute;
+    right: 0;
+    width: 700px;
+    z-index: 10;
+}
+
+.dogemon-header-start-before{
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(../img/banner/cryptoiriaHeaderStar.png);
+    height: 320px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dogemon-header-start-after{
+    width: 700px;
+    right: 0;
+    top: 0;
+    background-image: url(../img/banner/cryptoiriaHeaderStar.png);
+    height: 320px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.text-mobile-center{
+    text-align: left;
 }

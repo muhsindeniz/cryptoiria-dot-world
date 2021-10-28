@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '../components/Button/Button'
 import dotWorlLogo from '../assets/img/custom/dotWorldLogo.png';
 import ButtonOutline from '../components/Button/ButtonOutline';
@@ -8,13 +8,19 @@ import msdogebigsection from '../assets/img/custom/msdogebigsection.png'
 import msdogeicon from '../assets/img/custom/msdogeicon.png'
 import cryptoiria3dLogo from '../assets/img/custom/3dlogo.png'
 import dotFooterTwitterIcon from '../assets/img/custom/dotFooterTwitterIcon.svg'
+import {Link} from 'react-router-dom'
 
 const DotWorld = () => {
+
+    useEffect(() => {
+        document.body.style.backgroundColor = "#010101";
+    }, [])
+
     return (
         <>
             <header className="header-dot-world">
                 <nav className="nav-dot-world navbar navbar-dark navbar-expand-sm">
-                    <div className="container">
+                    <div className="container-fluid computer-space">
                         <a href="/" className="navbar-brand">
                             <img width="60" src={dotWorlLogo} />
                         </a>
@@ -29,8 +35,8 @@ const DotWorld = () => {
                         </div>
 
                         <div id="navbarCollapse" className="collapse navbar-collapse">
-                            <ul className="navbar-nav ml-auto d-sm-none d-lg-block">
-                                <li className="nav-item">
+                            <ul className="navbar-nav ml-auto">
+                                <li className="nav-item text-white p-3">
                                     <ButtonOutline text="Buy the coins" />
                                 </li>
                             </ul>
@@ -39,8 +45,8 @@ const DotWorld = () => {
                 </nav>
 
 
-                <section className="container">
-                    <div className="row d-flex justify-content-center align-items-center">
+                <section className="container-fluid mobile-absolute-menu">
+                    <div className="row d-flex justify-content-center align-items-center m-0">
                         <div className="col-sm-12 col-lg-8 text-center d-flex flex-column justify-content-center align-items-center">
                             <h1 className="mb-4">
                                 Stake, Win or Play -  enjoy <br /> DeFi in new world
@@ -51,7 +57,9 @@ const DotWorld = () => {
                             </p>
 
                             <div className="dot-world-header-button">
-                                <Button text="Watch the trailer" />
+                                <Link to="/DogeMoon">
+                                    <Button text="Watch the trailer" />
+                                </Link>
                                 <Button text="Buy comic NFT" />
                                 <Button text="Read the comic" />
                             </div>
@@ -64,8 +72,8 @@ const DotWorld = () => {
 
 
             <main>
-                <article className="container">
-                    <div className="row">
+                <article className="container-fluid">
+                    <div className="row computer-space">
                         <div className="col-sm-12 col-lg-6 order-lg-1 order-sm-2 text-white">
                             <div className="dow-world-cryptoiriaLogo-defi">
                                 <img src={cryptoiriaLogo} />
@@ -98,8 +106,8 @@ const DotWorld = () => {
 
 
 
-                <article className="container">
-                    <div className="row">
+                <article className="container-fluid">
+                    <div className="row computer-space">
                         <div className="col-sm-12 col-lg-6 text-white mobile-center-banner">
                             <img src={msdogebigsection} width="100%" />
                         </div>
@@ -134,8 +142,8 @@ const DotWorld = () => {
                 </article>
 
 
-                <article className="container">
-                    <div className="row">
+                <article className="container-fluid">
+                    <div className="row computer-space">
                         <div className="col-sm-12 col-lg-6 order-lg-1 order-sm-2 text-white">
                             <div className="dow-world-3dLogo">
                                 <h1>3d logo</h1>

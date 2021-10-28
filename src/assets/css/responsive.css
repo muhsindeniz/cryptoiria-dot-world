@@ -26,6 +26,15 @@
 
     .navbar-dark {
         background-color: #000 !important;
+        position: absolute;
+        top: 0;
+    }
+
+    .navbar-cryptoiria-dark{
+        background-color: var(--dogemoon-bg) !important;
+        position: absolute;
+        top: 0;
+        z-index: 20 !important;
     }
 
     .d-lg-none-sm-block{
@@ -55,10 +64,45 @@
     }
 
     .dow-world-cryptoiriaLogo-win-play img{
-        width: 60px;
+        width: 60px !important;
     }
 
     .mobile-center-banner img{
-        width: 280px;
+        width: 280px !important;
+    }
+
+    .computer-space{
+        padding: 0 !important;
+    }
+
+    .d-sm-block{
+        display: block !important;
+    }
+    
+    .d-sm-none{
+        display: none !important;
+    }
+    
+    .mobile-absolute-menu{
+        padding-top: 100px !important;
+    }
+
+    .cryptoiria-header-button{
+        justify-content: space-between !important;
+    }
+
+    .button-primary-outline{
+        height: 35px !important;
+        width: 124px !important;
+        background-size: contain !important;
+    }
+
+    .headerBannerBg img{
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    .text-mobile-center{
+        text-align: center !important;
     }
 }
